@@ -1,0 +1,278 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    background-color:white;
+    color: black;
+}
+
+img{
+    width: 100%;
+}
+
+h2{
+    font-size: 35px;
+    font-weight: bold;
+}
+h3{
+    font-weight: bold;
+}
+
+.oculto{
+    display: none;
+}
+
+.boton,.boton-tarjeta{
+    display: inline-block;
+    padding: 12px;
+    color: white;
+    font-size: 15px;
+    background-color: #AB3859;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+}
+
+.boton:hover, .boton-reservar:hover{
+    color: rgb(255, 255, 255);
+    background-color: #c94167;
+}
+
+.boton:active, .boton-reservar:active{
+    color: rgb(212, 212, 212);
+    background-color: #862b45;
+}
+
+.boton-reservar{
+    display: inline-block;
+    padding: 30px;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: rgb(172, 21, 104);
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+}
+
+/*----------- HEADER -----------------*/
+
+header{
+    background-color: rgba(172, 21, 104, .8);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 0;
+    font-size: 18px;
+
+}
+
+header a:hover{
+    color: #ce6e89;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.menu-principal-pc li, .contenedor-acceso-redes li{
+    display: inline-block;
+    margin: 0 2%;
+}
+
+.menu-principal-movil{
+    width: 80%;
+    top: 80px;
+    right: -100%;
+    display: block;
+    position: fixed;
+    background-color: rgba(172, 21, 104, .8);
+}
+
+.menu-principal-movil li{
+    list-style: none;
+    padding: 10px;
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+}
+
+.titulo-home{
+    color: white;
+}
+.titulo-home h2{
+    font-size: 40px;
+
+}
+
+.detalle-titulo{
+    background-color: rgb(94, 4, 136);
+
+}
+
+.detalle{
+    background-color: rgb(172, 21, 104);
+}
+
+#section-home{
+    height: 90vh;
+}
+#banner-home{
+    background-image: url(../img/hotel1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+#section-reserva{
+    background-color: #240d39;
+    color: white;
+}
+
+.contenedor-nosotros{
+    background-color: #240d39;
+    width: 95%;
+}
+.contenedor-nosotros-izq{
+    color: white;
+    padding: 50px 60px;
+    text-align: justify;
+}
+
+.contenedor-img img{
+    object-fit: cover;
+    height: 100%;
+}
+
+/*----------------- Inicio INDEX HTML ----------------- */
+
+.habitacion{
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    padding: 0 !important;
+}
+
+.habitacion .capa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    height: 400px;
+    opacity: 0;
+    transition: .5s;
+    text-transform: uppercase;
+    color: white;
+}
+
+.habitacion .capa:hover{
+    opacity: 1;
+    background: rgba(172, 21, 104, .5);
+}
+
+.habitacion img{
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* -------------------- Comentarios ------------------------------------- */
+.fila-comentario{
+    width: 80%;
+}
+
+.fila-comentario h3{
+    color: #AB3859;
+}
+.fila-comentario p{
+    font-style: italic;
+}
+
+/* -------------------- Galeria ------------------------------------------ */
+
+.boton-filtro{
+    display: inline;
+    width: 50%;
+}
+
+
+#contenedor-fotos > .foto{
+    text-align: center;
+}
+
+#contenedor-fotos img{
+    width: 100%;
+    box-shadow: 0 15px 15px rgba(0,0,0, 0.2);
+
+}
+
+/* -----------------------------  Reservas HTML  -------------------------------------- */
+
+#section-home-booking{
+    height: 90vh;
+    color: white;
+}
+#section-home-booking h2{
+    font-size: 40px;
+}
+
+#banner-booking{
+    background-image: url(../img/hotel3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-booking{
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+#section-booking-info h2{
+    background-color: rgba(172, 134, 170, 0.233);
+}
+
+.detalle-nombre{
+    color: #240d39;
+}
+
+.card-habitacion{
+    background-color: rgba(172, 134, 170, 0.233);
+}
+
+.detalle-precio{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+/* section-payment */
+#card-body{
+    background-color: rgba(172, 134, 170, 0.233);
+
+}
+
+/* FOOTER */
+footer{
+    background-color: #240d39;
+    color: white;
+    font-size: 0.8rem;
+}
+
